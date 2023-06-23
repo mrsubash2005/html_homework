@@ -1,0 +1,27 @@
+<html>
+
+<body>
+      <h1><i>my first javascript</i></h1>
+      <p>the javascript to change the value of cycle(source) attribute of image</p>
+      <script>
+            function cycle(sw) {
+                  var pic;
+                  if (sw == 0) {
+                        pic = "skype-emoji.gif"
+                  }
+                  else {
+                        pic = "giphy.gif"
+                  }
+                  document.getElementById('cycle1').src = pic;
+            }
+      </script>
+
+      <img id="cycle1" src="giphy.gif">
+
+      <p>
+            <button type="button" onclick="cycle(1)">cycle run</button>
+            <button type="button" onclick="cycle(0)">cycle stop</button>
+      </p>
+</body>
+
+</html>
