@@ -1,26 +1,106 @@
 <html>
 <head>
+    <style>
+        div {border: 10px solid black;height: 100px;width: 100px;padding: 5%;}
+  body {background-image:url ;}
+
+</style>
 <body>
 
-<h2> my new  forms </h2>
-
+<CENTER>
+    <h2><i> my new  forms</i> </h2>  
+<fieldset>
+    <legend><i>filup application form</i></legend>
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="subash"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"value="sports"><b><br>
-  <input type="submit" value="Submit"><br><br>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    <label for="javascript">JavaScript</label>
+    <h1><i>MY APPLICATION FORM</i></h1>
+</fieldset>
 
-</form> 
+<!--form creation-->
 
-<p>my first radio and text form".</p>
+<fieldset>
+   <legend><i>personal details</i></legend>
+   
+   <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+ 
+  <label for="lname">Last name :</label>
+  <input type="text" id="lname" name="lname"value=""><b><br><br>
+ 
+<lable for="dbirth">date of birth:</lable>
+<input type="text" id="dbirth" name="dbirth"value=""><br><br>
 
+<lable for="address">address:</lable>
+<input type="text" id="address" name="address"value=""><br><br>
+
+<lable for="contact">contact:</lable>
+<input type="text" id="contact" name="contact"value=""><br><br>
+
+<lable for="mail">mail:</lable>
+<input type="text" id="mail" name="mail"value=""><br><br>
+
+<label for="gmail">gmail:</label>
+<input type="text" id="gmail" name="gmail"value=""><br><br>
+
+<!--selection program-->
+
+
+<label for="which grouup you select">which group you select:</label>
+<select name="which group you select" id="which group you select" >
+     <option value="BUSINESS MATHS">BM BUSINESS MATHHS</option>
+     <option value="COMPUTER SCIENCE">CS COMPUTER SCIENCE</option>
+     <option value="HISTORY">HISTORY</option>
+     <option value="COMPUTER APPLICATION">CA COMPUTER APPLICATION</option>
+     <option value="BIOLOGY">BIOLOGY</option>
+     <option value="BIO MATHS">BIO MATHS</option>
+     <option value="PURE SCIENCE">PURE SCIENCE</option>
+</select><br><br>
+
+</fieldset>
+<!--general selection program-->
+   <fieldset>
+    <legend><i>gendral details</i></legend>
+ 
+    <label for="which collage">which collage</label>
+    <input id="which collage" type="text" name="which collage" value=""><br><br>
+
+    <label for="district">district</label>
+    <select name="district" id="district">
+       <option value="CHENNAI">CHENNAI</option>
+       <option value="KANCHIPURAM">KANCHIPURAM</option>
+       <option value="CENGALPATTU">CENGALPATTU</option>
+       <option value="KADALLUER">KADALLUER</option>
+       <option value="KANYAKUMARI">KANYAKUMARI</option>
+       <option value="TIRUPUR">TIRUPUR</option>
+       <option value="THOOTHUKUDI">THOOTHUKUDI</option>
+</select><br><br>
+
+<label for="your elligiblity">your intrested</label>
+<input list="your elligiblity">
+
+<datalist id="your elligiblity">
+ <option value="COMPUTER SCIENCE">CS</option>
+ <option value="COMPUTER APPLICATION">CA</option>
+ <option value="DATA SCIENCE">DS</option>
+ <option value="COPUTER SCIENCE WITH DATA SCIENCE">CSDS</option>
+ </datalist>
+
+<p><i>interest OR not interested</i></p>
+<label for="selected">selected</label>
+<input type="radio" id="selected" name="willingness">
+<label for="deselected">deselected</label>
+<input type="radio" name="willingness" id="deselected">
+
+</fieldset>
+</CENTER>
+
+<textarea name="your photos" id="your photos" cols="50" rows="10">your photo</textarea><br><br>
+<textarea name="about you" id="about you" cols="50" rows="10">about you</textarea>
+
+
+<input type="submit" name="submit">
+<input type="reset" name="reset">
+
+</form>
 </body>
 </head>
 </html>
